@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("x")
+    basic.showString("b")
     if (Balls > 4) {
         Balls = 4
         basic.showNumber(Balls)
@@ -10,13 +10,13 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(Balls)
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("x")
+    basic.showString("b")
     basic.showNumber(Balls)
-    basic.showString("y")
+    basic.showString("s")
     basic.showNumber(Strikes)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("y")
+    basic.showString("s")
     if (Strikes > 3) {
         Strikes = 3
         basic.showNumber(Strikes)
@@ -28,19 +28,19 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(Strikes)
 })
 input.onGesture(Gesture.Shake, function () {
-    basic.showString("x")
+    basic.showString("b")
     Balls = 0
     basic.showNumber(Balls)
-    basic.showString("y")
+    basic.showString("s")
     Strikes = 0
     basic.showNumber(Strikes)
     basic.clearScreen()
 })
 let Strikes = 0
 let Balls = 0
-basic.showString("x=#balls")
+basic.showString("b=#balls")
 basic.showNumber(Balls)
-basic.showString("y=#strikes")
+basic.showString("s=#strikes")
 basic.showNumber(Strikes)
 basic.showLeds(`
     # # # # #
