@@ -10,7 +10,9 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(Balls)
 })
 input.onButtonPressed(Button.AB, function () {
+    basic.showString("x")
     basic.showNumber(Balls)
+    basic.showString("y")
     basic.showNumber(Strikes)
 })
 input.onButtonPressed(Button.B, function () {
